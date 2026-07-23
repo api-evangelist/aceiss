@@ -1,7 +1,27 @@
 aid: aceiss
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aceiss.png
 name: Aceiss
-description: Aceiss is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Aceiss is a security monitoring and access-visibility platform that gives
+  CISOs and risk managers continuous insight into who has access to their GitHub
+  organizations and repositories. It monitors user access across repositories,
+  detects unauthorized or anomalous activity in real time, and produces
+  governance and compliance reporting mapped to frameworks such as NIST, CIS,
+  HIPAA, ISO 27001, CSA STAR, HITRUST, and SOC 2. Aceiss installs from the
+  GitHub Marketplace as a read-only app requiring admin privileges and exposes
+  an API for integrating its real-time access data into existing systems, with
+  spreadsheet and PDF export. The company is backed by Canaan Partners.
 url: https://raw.githubusercontent.com/api-evangelist/aceiss/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +34,40 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Security
+- Identity and Access Management
+- Access Control
+- Governance
+- Compliance
+- Monitoring
+- GitHub
+- Insider Threat
+- Zero Trust
 apis: []
+common:
+- type: DomainSecurity
+  url: security/aceiss-domain-security.yml
+- type: Website
+  url: https://www.aceiss.com
+- type: SignUp
+  url: https://github.com/marketplace/aceiss-for-github
+- type: Pricing
+  url: https://github.com/marketplace/aceiss-for-github#pricing-and-setup
+- type: Support
+  url: https://www.aceiss.com/contact
+- type: PrivacyPolicy
+  url: https://aceiss-app-public.s3.us-east-1.amazonaws.com/assets/documents/AFG/Aceiss+-+Privacy+Policy+-+2025.pdf
+- type: TermsOfService
+  url: https://aceiss-app-public.s3.us-east-1.amazonaws.com/assets/documents/AFG/Aceiss+Platform+-+Master+Terms+of+Use+-+2025.pdf
+- type: GitHubOrganization
+  url: https://github.com/aceiss
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
